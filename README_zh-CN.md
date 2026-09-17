@@ -205,7 +205,6 @@ multi-search-engine/
 ├── SKILL.md                  # Agent 的首要操作契约
 ├── CHANGELOG.md
 ├── LICENSE                   # MIT
-├── Skillicon.png
 ├── README.md
 ├── README_zh-CN.md
 ├── examples/

@@ -205,7 +205,6 @@ multi-search-engine/
 ├── SKILL.md                  # Primary operating contract for agents
 ├── CHANGELOG.md
 ├── LICENSE                   # MIT
-├── Skillicon.png
 ├── README.md
 ├── README_zh-CN.md
 ├── examples/
