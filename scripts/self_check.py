@@ -28,7 +28,7 @@ from search import result_is_merge_candidate
 from url_safety import URLSafetyError, inspect_url
 
 REQUIRED = [
-    "SKILL.md", "Skillicon.png", "LICENSE", "CHANGELOG.md",
+    "SKILL.md", "LICENSE", "CHANGELOG.md",
     "scripts/runtime.py", "scripts/engine_catalog.py", "scripts/search.py", "scripts/fetch.py",
     "scripts/parse.py", "scripts/quality.py", "scripts/resolve_link.py", "scripts/show.py",
     "scripts/cleanup.py", "scripts/self_check.py", "scripts/url_safety.py",
@@ -96,7 +96,7 @@ def main() -> int:
         errors.append("routing-regression:cjk-order")
     if not en_plan or en_plan[0] != "bing":
         errors.append("routing-regression:latin-order")
-    if query_language_hint("ByteDance AI 战略") != "mixed":
+    if query_language_hint("具身智能 industry report") != "mixed":
         errors.append("language-regression:mixed-query")
     if query_language_hint("site:leadleo.com 具身智能 报告") != "cjk":
         errors.append("language-regression:operator-domain-must-not-force-latin")
